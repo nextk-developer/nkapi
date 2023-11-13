@@ -1,5 +1,5 @@
-title: Architect theme
-description: Architect is a theme for GitHub Pages.
-show_downloads: true
+title: NK API
+description: 넥스트케이에서 제공되는 분석서버의 API 문서입니다.
+show_downloads: false
 google_analytics:
-theme: jekyll-theme-architect
+theme: jekyll-theme-cayman

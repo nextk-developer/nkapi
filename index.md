@@ -1,123 +1,52 @@
 ---
 layout: default
+title: Home
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# 소개
+NKAI API의 프로토콜은 **REST API(HTTP/JSON)**와 **ZMQ**로 구성됩니다.
 
-[Link to another page](./another-page.html).
+### REST API
+단방향 요청/응답 형식의 기능에 사용합니다.
+- 컴퓨팅 노드
+  - 노드 등록
+  - 노드 수정
+  - 노드 삭제
+  - 채널 항목 조회
+- 채널
+  - 채널 등록
+  - 채널 수정
+  - 채널 삭제
+  - 관심영역 항목 조회
+  - 채널 링크 등록 / 해제
+- 분석 설정
+  - 이벤트 관심영역 등록
+  - 이벤트 관심영역 수정
+  - 이벤트 관심영역 삭제
+  - 분석 제어
+    - 시작
+    - 종료
+    - 초기화
+  - 분석 일정 등록
+  - 얼굴
+    - 얼굴 등록
+    - 얼굴 삭제
+    - 얼굴 항목 조회
+- 레코딩 설정
+  - 레코딩 일정 등록
+  - 저장된 데이터 날짜 조회
+- 플레이백
+  - 플레이백 요청
+- 메타 데이터
+  - 메타 데이터 조회
+- 통계 데이터 조회
+- 시스템
+  - 시스템 로그 조회
+  - 시스템 명령 전달
+- 모델 설정
+  - 
+- 공통 항목
+  - 
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+### ZMQ
+메시지를 반복 전송하는 스트리밍 성격의 통신에 사용합니다.
