@@ -156,6 +156,9 @@ Direction, LeftTurn, RightTurn, UTurn 이벤트는 MultiLine으로 설정 후 Po
 | 201 | Fire_Flame |
 | 300 | Face |
 | 500 | Bag |
+| 600 | Industry Crane |
+| 601 | Industry Carrier |
+| 602 | Industry Materials |
 | 1000 | NonTrackingObjectFromThis |
 | 1001 | Glove |
 | 1002 | FaceShield |
