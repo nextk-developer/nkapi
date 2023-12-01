@@ -13,8 +13,7 @@ POST /v2/va/create-computing-node
 
 {
   "host": "192.168.0.39",
-  "nodeName": "TEST_SYSTEM_PC",
-  "license": "NKAI_IP_MAC_servercnt_chcnt"
+  "nodeName": "TEST_SYSTEM_PC"
 }
 ```
 
@@ -22,7 +21,6 @@ POST /v2/va/create-computing-node
 | :---- | :---- |:---- |:----:|
 | host | String | 호스트주소 | O |
 | nodeName | String | 노드 닉네임 | O |
-| license | String | 암호화된 라이선스 값 (**[Licese](#license)**)  | O |
 
 ## Response
 
@@ -122,8 +120,7 @@ POST /v2/va/update-computing-node
 
 {
     "nodeId": "14f502f2",
-    "nodeName": "TEST_NODE",
-    "license" : "NKAI_IP_MAC_servercnt_chcnt"
+    "nodeName": "TEST_NODE"
 }
 ```
 
@@ -132,7 +129,6 @@ POST /v2/va/update-computing-node
 | :---- | :---- |:---- |:---- |
 | nodeId | String | 노드 ID | O |
 | nodeName | String | 노드 닉네임 | O |
-| license | String | 암호화된 라이선스 값 (**[Licese](#license)**)  | O |
 
 <br>
 
@@ -202,13 +198,6 @@ POST /v2/va/remove-computing-node
 | code | Enum | 응답 코드 (**[Error Code](../common/models.html#error-code)**) | O |
 | message | String | 처리 메시지 | X |
 
-<br>
-
-## License 
-
-| Name | Description |
-| :---- |:---- |
-| license | 암호화 방식에 대한 내용은 사내 개발자와 협의 필요 | 
 
 <br><br>
 

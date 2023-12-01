@@ -103,6 +103,8 @@ Direction, LeftTurn, RightTurn, UTurn 이벤트는 MultiLine으로 설정 후 Po
 | PPE | 장구류 착용 이벤트 | [Polygon / Rect]
 | TidyUpWorkbench | 작업대 정리 이벤트 | [Polygon / Rect]
 | Leak | 누수 검출 이벤트 | [Polygon / Rect]
+| HeatTreatmentAccident | 열처리 사고 | [Polygon / Rect]
+| CraneAccident | 크레인 충돌 | [Polygon / Rect]
 
 # ClassId
 

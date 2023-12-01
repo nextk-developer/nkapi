@@ -18,7 +18,7 @@ POST /v2/va/get-models
 
 | Name | Type | Description | Required |
 | :---- | :---- |:---- |:----: |
-| nodeId | String | 컴퓨팅 노드 ID | O |
+| NodeId | String | 컴퓨팅 노드 ID | O |
 
 ## Response
 
@@ -157,12 +157,14 @@ POST /v2/va/get-models
 
 # Apply models
 서버의 모델 설정을 변경합니다.
+단, 최초 엔진을 다시 빌드해야 하는 환경일땐 Response가 N분 이상 오래 걸릴 수 있습니다.
 
 ## Request
 ```
 POST /v2/va/apply-models
 
 {
+    "NodeId": "e339d131d4a6bbc5",
     "Models": [
         {
             "BatchSize": 1,
@@ -281,6 +283,7 @@ POST /v2/va/apply-models
 
 | Name | Type | Description | Required |
 | :---- | :---- |:---- |:----: |
+| NodeId | String | 컴퓨팅 노드 ID | O |
 | Models | JsonObject[] | [Model Config](#model-config) List | O |
 
 ## Response
