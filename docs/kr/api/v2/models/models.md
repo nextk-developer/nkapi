@@ -27,6 +27,7 @@ POST /v2/va/get-models
 {
     "Models": [
         {
+            "Uid": "uid",
             "BatchSize": 1,
             "CalibrationImagesPath": "null",
             "Debug": false,
@@ -57,6 +58,7 @@ POST /v2/va/get-models
             "TrtFileName": ""
         },
         {
+            "Uid": "uid",
             "BatchSize": 1,
             "CalibrationImagesPath": "null",
             "Debug": false,
@@ -83,6 +85,7 @@ POST /v2/va/get-models
             "NumberOfFrameDivisions": -1,
             "Options": [
                 {
+                    "Uid": "uid",
                     "BatchSize": 1,
                     "CalibrationImagesPath": "configs/calibration_images.txt",
                     "Debug": false,
@@ -108,6 +111,7 @@ POST /v2/va/get-models
                     "TrtFileName": ""
                 },
                 {
+                    "Uid": "uid",
                     "BatchSize": 1,
                     "CalibrationImagesPath": "configs/calibration_images.txt",
                     "Debug": false,
@@ -167,6 +171,7 @@ POST /v2/va/apply-models
     "NodeId": "e339d131d4a6bbc5",
     "Models": [
         {
+            "Uid": "uid",
             "BatchSize": 1,
             "CalibrationImagesPath": "null",
             "Debug": false,
@@ -197,6 +202,7 @@ POST /v2/va/apply-models
             "TrtFileName": ""
         },
         {
+            "Uid": "uid",
             "BatchSize": 1,
             "CalibrationImagesPath": "null",
             "Debug": false,
@@ -223,6 +229,7 @@ POST /v2/va/apply-models
             "NumberOfFrameDivisions": -1,
             "Options": [
                 {
+                    "Uid": "uid",
                     "BatchSize": 1,
                     "CalibrationImagesPath": "configs/calibration_images.txt",
                     "Debug": false,
@@ -248,6 +255,7 @@ POST /v2/va/apply-models
                     "TrtFileName": ""
                 },
                 {
+                    "Uid": "uid",
                     "BatchSize": 1,
                     "CalibrationImagesPath": "configs/calibration_images.txt",
                     "Debug": false,
@@ -309,6 +317,7 @@ POST /v2/va/apply-models
 
 | Name | Type | Description | Required |
 | :---- | :---- |:---- |:----: |
+| Uid | string | 모델 id | O |
 | Enable | bool | 사용 여부 | O |
 | NetType | Enum | [모델종류](#detector-model-type) | O |
 | NetSubType | Enum | [서브모델 종류](#detector-sub-type) | O |
