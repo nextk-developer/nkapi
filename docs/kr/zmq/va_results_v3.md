@@ -253,12 +253,12 @@ Sample
 | is_detected | bool | 검출 검출 상태 |
 | is_tracked | bool | 객체 추적 상태 |
 | is_event | bool | 이벤트 발생 상태 |
-| class_id | Integer | 채널 ID (**[ClassId](../api/v3/common/models.html/#classid)**) |
+| class_id | Integer | 채널 ID (**[ClassId](../api/v3/common/models.html#classid)**) |
 | object_prob | Double | 검출된 객체의 정확도 |
 | object_id | Integer | 객체 ID |
 | event_id | Integer | 자동 할당된 이벤트 ID (동일한 타입의 이벤트가 여럿 존재할 경우 구분 목적) |
-| event_status | Enum | 이벤트 진행 상태 (**[Progress](../api/v3/common/models.html/#progress)**) |
-| event_type | String | 이벤트 타입 (**[EventType](../api/v3/common/models.html/#eventtype)**) |
+| event_status | Enum | 이벤트 진행 상태 (**[Progress](../api/v3/common/models.html#progress)**) |
+| event_type | String | 이벤트 타입 (**[EventType](../api/v3/common/models.html#eventtype)**) |
 | roi_info | JsonObject[] | 관심 영역 정보 (**[RoiInfo](#roi-info)**) |
 | stay_time | Double | 체류 시간 |
 | image_buffer | String(Base64 Encoding) | 이벤트 진행 상태가 Begin일때만 전달됩니다. (이벤트 객체 섬네일) |
