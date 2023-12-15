@@ -18,11 +18,13 @@ NKAI API의 프로토콜은 **REST API(HTTP/JSON)**와 **ZMQ**로 구성됩니�
   - [채널 수정](./docs/kr/api/v2/channel/channels.html#update-channel)
   - [채널 삭제](./docs/kr/api/v2/channel/channels.html#remove-channel)
   - [관심영역 항목 조회](./docs/kr/api/v2/va/roi.html#list-roi)
+  - [관심영역 항목 조회](./docs/kr/api/v3/va/roi.html#list-roi) (**1.1.0 버전 부터3**)
   - [채널 링크 등록 / 해제](./docs/kr/api/v2/channel/link.html)
 - [분석 설정](./docs/kr/api/v2/va/roi.html)
   - [이벤트 관심영역 등록](./docs/kr/api/v2/va/roi.html#create-roi)
   - [이벤트 관심영역 수정](./docs/kr/api/v2/va/roi.html#update-roi)
   - [이벤트 관심영역 삭제](./docs/kr/api/v2/va/roi.html#remove-roi)
+  - [이벤트 관심영역 등록/수정](./docs/kr/api/v3/va/roi.html#add-or-update-roi) (**1.1.0 버전 부터3**)
   - [분석 제어](./docs/kr/api/v2/va/control.html)
   - [분석 일정 등록](./docs/kr/api/v2/va/schedule.html)
   - [얼굴](./docs/kr/api/v2/va/face.html)
@@ -43,6 +45,7 @@ NKAI API의 프로토콜은 **REST API(HTTP/JSON)**와 **ZMQ**로 구성됩니�
 
 ### ZMQ
 메시지를 반복 전송하는 스트리밍 성격의 통신에 사용합니다.
-- [분석 메타데이터 포멧](./docs/kr/zmq/va_results.html)
-- [통계 데이터 포멧](./docs/kr/zmq/statistics.html)
+- [분석 메타데이터 포멧](./docs/kr/zmq/va_results.html) (**1.1.0 버전 이전**)
+- [분석 메타데이터 포멧](./docs/kr/zmq/va_results_v3.html) (**1.1.0 버전 부터**)
+- [통계 데이터 포멧](./docs/kr/zmq/statistics.html) 
 - [레코드 날짜 포멧](./docs/kr/zmq/record_date.html)
