@@ -111,6 +111,8 @@ Direction, LeftTurn, RightTurn, UTurn 이벤트는 MultiLine으로 설정 후 Po
 | HeatTreatmentAccident | 열처리 사고 | [Polygon / Rect]
 | CraneAccident | 크레인 충돌 | [Polygon / Rect]
 | FloodedOrSnowRoad | 침수 적설 | [Multi Polygon]
+| FloodedRoad | 침수 | [Multi Polygon]
+| SnowRoad | 적설 | [Multi Polygon]
 
 # ClassId
 
@@ -179,6 +181,7 @@ Direction, LeftTurn, RightTurn, UTurn 이벤트는 MultiLine으로 설정 후 Po
 | 1009 | FloodedRoad |
 | 1010 | SnowRoad |
 | 1011 | Road |
+| 1012 | FloodedRoadOrSnowRoad |
 
 # LogType
 
