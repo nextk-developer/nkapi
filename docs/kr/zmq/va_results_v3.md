@@ -16,6 +16,7 @@ Sample
         {
             "abnormal_s_core": 0.6080000000074506,
             "class_id": 0,
+            "directional_type": 7,
             "cls_items": ["shirt", "pants"],
             "event_detail": {
                 "event_s_core": 0,
@@ -229,7 +230,7 @@ Sample
 | :---- | :---- |:---- |
 | camera_uid | String | 채널 ID |
 | camera_name | String | 채널 이름 |
-| event_list | JsonObject | 이벤트 리스트 (**[EventInfo](va_results_v3.html#eventinfo)**) |
+| event_list | JsonObject | 이벤트 리스트 (**[EventInfo](#eventinfo))**) |
 | frame_width | Integer | 영상 너비 |
 | frame_height | Integer | 영상 높이 |
 | frame_number | Integer | 영상 프레임 번호 |
@@ -253,7 +254,8 @@ Sample
 | is_detected | bool | 검출 검출 상태 |
 | is_tracked | bool | 객체 추적 상태 |
 | is_event | bool | 이벤트 발생 상태 |
-| class_id | Integer | 채널 ID (**[ClassId](../api/v3/common/models.html#classid)**) |
+| class_id | Enum | 채널 ID (**[ClassId](../api/v3/common/models.html#classid)**) |
+| directional_type | Enum | 객체 이동 방향 (**[DirectionayType](../api/v3/common/models.html#directionaltype)**) |
 | object_prob | Double | 검출된 객체의 정확도 |
 | object_id | Integer | 객체 ID |
 | event_id | Integer | 자동 할당된 이벤트 ID (동일한 타입의 이벤트가 여럿 존재할 경우 구분 목적) |
