@@ -476,7 +476,7 @@ POST /v3/va/update-roi-params
 | directional | String | Roi내 진/출입 방향성 지정 (**[DirectionalType](#directionaltype)**)  | X | 0, 0 | - | Polygon 객체 이벤트 (일부 제외) |
 | matching_score | String | 최소 인식 매칭 점수 | X | 0.99, 0.5 | - | NotWearingMask, MatchingFace |
 | apply_mask_matching | String | 마스크 착용 매칭 기능 | X | False | - | NotWearingMask |
-| stop_vx_vy | String | 객체의 정지 수치 범위 지정 | X | 15, 15 | - | QueueLength  |
+| stop_vx_vy | String | 객체의 정지 수치 범위 지정 | X | 15(int), 15(int) | - | QueueLength  |
 
 
 <!--

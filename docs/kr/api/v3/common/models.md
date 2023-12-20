@@ -80,6 +80,7 @@ Direction, LeftTurn, RightTurn, UTurn 이벤트는 MultiLine으로 설정 후 Po
 | Falldown | 쓰러짐 | [Polygon / Rect]
 | Violence | 싸움 | [Polygon / Rect]
 | IllegalParking | 불법 주정차 | [Polygon / Rect]
+| JayWalking | 무단 횡단 | [Polygon / Rect]
 | AbnormalObjectCount | 영역 ROI 내 개체밀집 (정의된 개체수 이상의 객체 존재) | [Polygon / Rect]
 | Longstay | 영역 ROI 내 장시간 체류(주정차) | [Polygon / Rect]
 | LineEnter | Line ROI를 지나가는 객체감지 (Enter 방향) | [Line]
