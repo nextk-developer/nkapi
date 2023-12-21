@@ -202,7 +202,14 @@ Sample
                         }
                     ]
                 },
-                "roi_aggregated_data_items": {},
+                "roi_aggregated_data_items": {
+                    "IntervalVelocity":{
+                        "max" : 0.0,
+                        "min" : 0.0,
+                        "avg" : 0.0,
+                        "cur" : 0.0
+                    }
+                },
                 "roi_object_counting": {
                     "entered_count": 7,
                     "exited_count": 7,
@@ -230,7 +237,7 @@ Sample
 | :---- | :---- |:---- |
 | camera_uid | String | 채널 ID |
 | camera_name | String | 채널 이름 |
-| event_list | JsonObject | 이벤트 리스트 (**[EventInfo](#eventinfo))**) |
+| event_list | JsonObject | 이벤트 리스트 (**[EventInfo](#eventinfo)**) |
 | frame_width | Integer | 영상 너비 |
 | frame_height | Integer | 영상 높이 |
 | frame_number | Integer | 영상 프레임 번호 |
@@ -280,7 +287,7 @@ Sample
 | roi | JsonObject | 관심 영역 정보 (**[ROI](../api/v3/common/models.html#roi)**)|
 | avg_stay_time | Double | 평균 체류 시간 |
 | roi_object_counting | JsonObject | 객체의 진입/진출/내부 수 (**[RoiObjectCouting](#roi-object-counting)**) |
-| roi_aggregated_data_items | JsonObject | 영역안에 진입한 총 객체 수 (**[RoiAggregatedData](#roi-aggregated-data)**) |
+| roi_aggregated_data_items | JsonDictionary[String, JsonObject] | Key: 이벤트 타입(**[EventType](../api/v3/common/models.html#eventtype)**), Value: 영역안에 진입한 총 객체 수 (**[RoiAggregatedData](#roi-aggregated-data)**) |
 
 
 ### Roi Object Counting
