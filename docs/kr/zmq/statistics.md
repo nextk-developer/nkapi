@@ -122,14 +122,14 @@ Sample
 | :---- | :---- |:---- |
 | RoiUId | String | 관심 영역 ID |
 | RoiNumber | Integer | 관심 영역 번호 (혹은 차로로 구분) |
-| EventType | String | 이벤트 타입 (**[EventType](../api/v2/common/models.html/#eventtype)**) |
+| EventType | String | 이벤트 타입 (**[EventType](../api/v2/common/models.html#eventtype)**) |
 | ClassIds | JsonObject[] | **[이벤트 별 통계 수치](#classid-event-statistics)** |
 
 ### ClassId event statistics
 
 | Name | Type | Description |
 | :---- | :---- |:---- |
-| ClassID | Integer | 채널 ID (**[ClassId](../api/v2/common/models.html/#classid)**) |
+| ClassID | Integer | 채널 ID (**[ClassId](../api/v2/common/models.html#classid)**) |
 | Count | Integer | 개수 |
 
 <br><br>
