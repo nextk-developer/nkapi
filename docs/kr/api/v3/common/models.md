@@ -473,6 +473,10 @@ Roi 내부의 roi_type은 Roi Point와 대부분 동일하게 되며 추후 Comp
 | CenterX_CenterY | 1 | 중앙 | 
 | LeftRightX_BottomY | 2 | 좌하단 + 우하단 |
 | CustomPoint | 3 | 사용자 지정 |
+| LeftTop | 4 | 좌상단 |
+| LeftBottom | 5 | 좌하단 |
+| RightTop | 6 | 우상단 |
+| RightBottom | 7 | 우하단 |
 
 
 ### ImageRect
