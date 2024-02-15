@@ -88,6 +88,7 @@ Direction, LeftTurn, RightTurn, UTurn 이벤트는 MultiLine으로 설정 후 Po
 | LineLeftTurn | Line ROI를 좌회전 (Enter 방향) | [Line]
 | LineRightTurn | Line ROI를 우회전 (Enter 방향) | [Line]
 | LineUTurn | Line ROI를 유턴 (Enter 방향) | [Line]
+| WrongWayDriving | Line ROI를 지나가는 객체감지 (Enter 방향) | [Line]
 | LineCrossing | 양방향 라인 통과 | [Line]
 | Direction | 방향성 이동 카운트 (좌, 우, 유턴 등) | [MultiLine, Polygon]
 | LeftTurn | 차량 좌회전 | [MultiLine, Polygon]
