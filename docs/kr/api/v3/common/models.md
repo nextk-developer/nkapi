@@ -110,6 +110,8 @@ Direction, LeftTurn, RightTurn, UTurn 이벤트는 MultiLine으로 설정 후 Po
 | TrafficVolume | 교통량 (ITS) per Day | [Polygon / Rect]
 | TrafficFlowRate | 교통량 (ITS) per Hour | [Polygon / Rect]
 | TrafficDensity | 차량 밀도 (ITS) kg/㎥ | [Polygon / Rect]
+| ITS | ITS 이벤트 복합  | [Polygon / Rect]
+| LicensePlateOcr | 번호판 인식 (ITS) | [Polygon / Rect]
 | ElderlyPeople | 노약자 (지팡이, 휠체어) | [Polygon / Rect]
 | PPE | 장구류 착용 이벤트 | [Polygon / Rect]
 | TidyUpWorkbench | 작업대 정리 이벤트 | [Polygon / Rect]
