@@ -296,7 +296,7 @@ Sample
 
 | Name | Type | Description |
 | :---- | :---- | :---- |
-| LicensePlate | Integer[] | 번호판 배열 (**미구현**)|
+| LicensePlate | String | 번호판 문자열 (UTF8) |
 | LicenseImageRect | JsonObject[] | 번호판 좌표 및 크기 (**[ImageRect](#imagerect)**) |
 | LicenseImageBuffer | String | 번호판 이미지 정보 (Base64 Encoding) |
 
