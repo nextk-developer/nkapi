@@ -36,7 +36,7 @@ Sample
                         "X": 0,
                         "Y": 0
                     },
-                    "LicensePlate": [1,2,3,4,5]
+                    "LicensePlate": "11구4485"
                 }
             },
             "EventID": 1,
