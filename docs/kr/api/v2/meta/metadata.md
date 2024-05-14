@@ -36,8 +36,8 @@ POST /v2/va/metadata
 | eventTypes | String[] | 해당 이벤트 타입 조회 (**[EventType](../common/models.html#eventtype)**) | O |
 | progressFilter | Integer[] | 진행 필터 (**[Progress](../common/models.html#progress)**) | O |
 | classIdFilter | Integer[] | 해당 classId 조회 (**[ClassId](../common/models.html#classid)**) | O |
-| startTime | String | 영상 재생 시작시간 (startTime ~ endTime 범위안의 영상 재생)| O |
-| endTime | String | 영상 재생 끝나는시간 (startTime ~ endTime 범위안의 영상 재생)| O |
+| startTime | String | 영상 재생 시작시간 [ISO-8601] | O |
+| endTime | String | 영상 재생 끝나는시간 [ISO-8601] | O |
 | includeThumbnail | Boolean | 썸네일 조회 여부 | O |
 | reIdObject | JsonObject | 리아이디 조회 여부 | X |
 

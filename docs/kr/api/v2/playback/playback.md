@@ -28,8 +28,8 @@ POST /v2/va/playback
 | :---- | :---- | :---- |:----: |
 | nodeId | String | 컴퓨팅 노드 ID | O |
 | channelId | String | 채널 ID | O |
-| startTime | String | 영상 재생 시작시간 (startTime ~ endTime 범위안의 영상 재생) | O |
-| endTime | String | 영상 재생 끝나는시간 (startTime ~ endTime 범위안의 영상 재생) | O |
+| startTime | String | 영상 재생 시작시간 [ISO-8601] | O |
+| endTime | String | 영상 재생 끝나는시간 [ISO-8601] | O |
 | includeMeta | bool | [not Supported] 메타 데이터 포함 여부 | O |
 | protocol | Enum | 프로토콜 (**[Playback Protocol](../common/models.html#playback-protocol)**)| O |
 

@@ -20,8 +20,8 @@ POST /v2/system-log
 | Name | Type | Description | Required |
 | :---- | :---- |:---- | :----:|
 | nodeId | String | 컴퓨팅 노드 ID | O |
-| startTime | String | 로그의 시작 시간 | O |
-| endTime | String | 로그의 끝 시간 | O |
+| startTime | String | 로그의 시작 시간 [ISO-8601] | O |
+| endTime | String | 로그의 끝 시간 [ISO-8601] | O |
 | logType | Integer | 로그 타입 (**[LogType](../common/models.html#logtype)**) | O |
 
 #### Remarkd

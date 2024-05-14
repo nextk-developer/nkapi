@@ -97,6 +97,7 @@ Direction, LeftTurn, RightTurn, UTurn 이벤트는 MultiLine으로 설정 후 Po
 | Smoke | 화재 연기 | [Polygon / Rect]
 | Flame | 화재 불꽃 | [Polygon / Rect]
 | MatchingFace | 등록 얼굴 매칭 | [Polygon / Rect]
+| MatchingPerson | 등록 사람 매칭 | [Polygon / Rect]
 | NotWearingMask | 얼굴 마스크 미착용 | [Polygon / Rect]
 | NoHelmet | 헬멧 미착용 | [Polygon / Rect]
 | TrafficActuatedSignal | 차량 감응 신호 | [Polygon / Rect]
@@ -381,6 +382,15 @@ Direction, LeftTurn, RightTurn, UTurn 이벤트는 MultiLine으로 설정 후 Po
 | 0 | None | 해제 |
 | 1 | And | Main에서 Sub 까지 포함되서 검출 |
 | 2 | Or | Main에서 Sub 둘 중 하나만 검출되도 검출 |
+
+
+# FeatureType
+
+| Value | Enum | Description |
+| :---- | :---- | :---- |
+| 0 | Person | 사람 |
+| 1 | Face | 얼굴 |
+| 2 | Vehicle | 차량 (Not Support) |
 
 
 
