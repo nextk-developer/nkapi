@@ -32,7 +32,7 @@ POST /v3/va/inference-image
         "camera_uid": "b9126cb49314f61d",
         "event_list": [
             {
-                "abnormal_s_core": 0.6080000000074506,
+                "abnormal_score": 0.6080000000074506,
                 "class_id": 0,
                 "directional_type": 7,
                 "cls_items": [
