@@ -381,6 +381,7 @@ POST /v2/va/update-roi-params
 | :---- | :---- |:---- |:----: |:----: |:----: | :----: |
 | distance | String | 두 라인 사이의 거리 (단위: meter ) | O | - | 20 | Direction, Straight, LeftTurn, RightTrun, UTurn |
 | thumbnail_ratio | String | 섬네일 객체 크기 지정 | X | 1, 1 | - | 모든 이벤트 |
+| thumbnail_crop | String | 섬네일 이미지 타입 지정 | X | True | - | 모든 이벤트 |
 | max_transition_time | String | 최초 존 전환(line crossing) 이후에 동일 객체에 대해 존 전환이 무시되는 최대 시간 (단위: seconds) | X | 2 | - | LineCrossing |
 | stay_time_sec | String | ROI 진입 후 이벤트 지연 시간 | X | 0 | - | Polygon 객체 이벤트 (일부 제외) |
 | inside_roi_type | String | [검출 박스의 ROI 진입 시작점](#insideroitype) | X | 0 | - | 모든 이벤트 |
