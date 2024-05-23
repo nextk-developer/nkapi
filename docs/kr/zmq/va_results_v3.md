@@ -19,7 +19,7 @@ Sample
             "directional_type": 7,
             "cls_items": ["shirt", "pants"],
             "event_detail": {
-                "event_s_core": 0,
+                "event_score": 0,
                 "face": {
                     "age": 0,
                     "gender": 0,

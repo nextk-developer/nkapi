@@ -40,7 +40,7 @@ POST /v3/va/inference-image
                     "pants"
                 ],
                 "event_detail": {
-                    "event_s_core": 0,
+                    "event_score": 0,
                     "face": {
                         "age": 0,
                         "gender": 0,
