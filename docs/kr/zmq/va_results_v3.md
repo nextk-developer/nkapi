@@ -20,15 +20,36 @@ Sample
             "cls_items": ["shirt", "pants"],
             "event_detail": {
                 "event_score": 0,
-                "face": {
+                "feature_detail": {
                     "age": 0,
+                    "feature": [],
+                    "feature_uid": "",
                     "gender": 0,
                     "identify": 0,
                     "memo": "",
                     "name": ""
                 },
-                "face_uid": "",
-                "key_points": {},
+                "person": {
+                    "attributes": {
+                        "age": [
+                            "teenager",
+                            0.9891610741615295
+                        ],
+                        "downcolor": [
+                            "black",
+                            0.9683611989021301
+                        ],
+                        "pants": [
+                            "pants",
+                            0.989878237247467
+                        ],
+                        "up": [
+                            "short",
+                            0.9488006234169006
+                        ]
+                    },
+                    "key_points": {}
+                },
                 "vehicle": {
                     "license_image_buffer": "",
                     "license_image_rect": {
@@ -37,7 +58,7 @@ Sample
                         "x": 0,
                         "y": 0
                     },
-                    "license_plate": [1,2,3,4,5]
+                    "license_plate": ""
                 }
             },
             "event_id": 1,
@@ -313,21 +334,24 @@ Sample
 
 | Name | Type | Description |
 | :---- | :---- |:---- |
-| face_id | String | 객체 ID |
 | event_score | Double | 이벤트 정확도 |
-| face | JasonObject | 얼굴 정보 (**[Face](#face)**) |
-| key_points | JasonObject[] | 키 포인트 (**[KeyPoints](#keypoints)**) |
-| vehicle | JasonObject | 차량 (**[Vehicle](#vehicle)**) |
+| feature_detail | JsonObject | 특징 상세 |
+| person | JsonObject | 사람 정보 (**[Person](#person)**) |
+| vehicle | JsonObject | 차량 정보 (**[Vehicle](#vehicle)**) |
 
-### Face
+
+### Feature Detail
 
 | Name | Type | Description |
 | :---- | :---- |:---- |
-| name | String | 객체 이름 |
-| age | Integer | 객체 나이 |
-| gender | Integer | 객체 성별 |
+| age | Double | 이벤트 정확도 |
+| feature | Double[] | 이벤트 정확도 |
+| feature_uid | String | 이벤트 정확도 |
+| gender | Enum | 객체 성별 (**[Gender](../api/v3/common/models.html#gender)**) |
 | identify | Enum | 객체 구분 (**[Identify](#identify)**) |
-| memo | String | 메모 |
+| memo | String | 이벤트 정확도 |
+| name | String |  이름 |
+
 
 ### KeyPoints
 
@@ -344,8 +368,6 @@ Sample
 | Normal | 일반 |
 | White | 인가자 |
 | Black | 비인가자 |
-
-<br>
 
 ### ObjectColor
 추적하는 객체를 구분할 때 사용되며 id별로 다른 색상을 가집니다.
@@ -364,6 +386,23 @@ Sample
 | license_plate | Integer[] | 번호판 배열 (**미구현**)|
 | license_image_rect | JsonObject[] | 번호판 좌표 및 크기 (**[ImageRect](../api/v3/common/models.html#imagerect)**) |
 | license_image_buffer | String | 번호판 이미지 정보 (Base64 Encoding) |
+
+
+### Person
+
+| Name | Type | Description |
+| :---- | :---- | :---- |
+| attributes | JsonObject[] | 속성 (**[Attributes](#attributes)**)|
+| key_points | JsonObject[] | 키 포인트 (**[KeyPoints](#keypoints)**) |
+
+
+### Attributes
+
+| Name | Type | Description |
+| :---- | :---- | :---- |
+| Key | String | 메인 항목 |
+| Value | JsonObject[String, double] | 서브 항목, Threashold |
+
 
 <br><br>
 

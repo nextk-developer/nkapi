@@ -113,7 +113,7 @@ POST /v3/va/list-feature
 
 | Name | Type | Description | Required |
 | :---- | :---- |:---- | :----:|
-| feature_list | JsonObject[] | [이미지 정보](#feature-db) 리스트 | O |
+| feature_list | JsonObject[] | (**[이미지 정보](#feature)**) 리스트 | O |
 | code | Enum | 응답 코드 (**[Error Code](../common/models.html#error-code)**) | O |
 | message | String | 오류 메시지 | X |
 
@@ -225,7 +225,7 @@ POST /v3/va/mathing-feature
 | user_id | String | 유저 ID | O |
 | user_name | String | 이름 | O |
 | user_age | Integer | 나이 | O |
-| gender | Integer | 성별 (**[Gender](../common/models.html/#gender)**) | O |
+| gender | Enum | 객체 성별 (**[Gender](../common/models.html#gender)**) |
 | identifier | Integer | 인종 (**[Identifier](../common/models.html/#identifier)**) | O |
 | memo | String | 메모 | O |
 

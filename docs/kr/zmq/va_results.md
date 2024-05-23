@@ -239,9 +239,9 @@ Sample
 | :---- | :---- |:---- |
 | FaceUID | String | 객체 ID |
 | EventScore | Double | 이벤트 정확도 |
-| Face | JasonObject | 얼굴 정보 (**[Face](#face)**) |
-| KeyPoints | JasonObject[] | 키 포인트 (**[KeyPoints](#keypoints)**) |
-| Vehicle | JasonObject | 차량 (**[Vehicle](#vehicle)**) |
+| Face | JsonObject | 얼굴 정보 (**[Face](#face)**) |
+| KeyPoints | JsonObject[] | 키 포인트 (**[KeyPoints](#keypoints)**) |
+| Vehicle | JsonObject | 차량 (**[Vehicle](#vehicle)**) |
 
 ### ImageRect
 모든 수치는 실제 객체 크기 / 프레임 크기 입니다.
